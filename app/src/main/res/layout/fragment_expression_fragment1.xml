@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wl.pluto.plutochat.fragment.ExpressionFragment1">
+
+    <com.wl.pluto.plutochat.widget.GestureGridView
+        android:id="@+id/gv_expression_grid_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:numColumns="7"
+        android:padding="@dimen/dimen_10"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dimen_20" />
+
+</FrameLayout>

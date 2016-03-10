@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_chat_activity_copy"
+        android:title="@string/text_menu_chat_activity_copy" />
+
+    <item
+        android:id="@+id/menu_chat_activity_forward"
+        android:title="@string/text_menu_chat_activity_forward" />
+    <item
+        android:id="@+id/menu_chat_activity_favorite"
+        android:title="@string/text_menu_chat_activity_favorite" />
+
+    <item
+        android:id="@+id/menu_chat_activity_translate"
+        android:title="@string/text_menu_chat_activity_translate" />
+
+    <item
+        android:id="@+id/menu_chat_activity_delete"
+        android:title="@string/text_menu_chat_activity_delete" />
+
+    <item
+        android:id="@+id/menu_chat_activity_more"
+        android:title="@string/text_menu_chat_activity_more" />
+
+</menu>

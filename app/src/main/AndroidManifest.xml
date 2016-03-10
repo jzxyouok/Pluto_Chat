@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wl.pluto.plutochat">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/pluto_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.alibaba.app.ossak"
+            android:value="zsPj04At9eNhJahw" />
+        <meta-data
+            android:name="com.alibaba.app.osssk"
+            android:value="lmacO8vszvIBLgnO6XcErlyNGZ1BsA" />
+        <meta-data
+            android:name="com.alibaba.app.ossbucketname"
+            android:value="pluto8172" />
+
+        <!-- 高德地图key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c2a60c6fb32f4945f260e1b81b829727" />
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <!-- ************************设置环信应用的 appkey ************************************** -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="pluto8172#plutochat" />
+
+        <!-- ***********************************ContentProvider******************************* -->
+        <provider
+            android:name=".database.UserContentProvider"
+            android:authorities="com.wl.pluto.plutochat.provider" />
+        <provider
+            android:name=".database.ChatContactsContentProvider"
+            android:authorities="com.wl.pluto.plutochat.ContactsProviderAuthority"
+            android:enabled="true"
+            android:exported="true" />
+
+        <!-- ***********************************    Service   ******************************* -->
+        <!-- 声明sdk所需的service SDK核心功能 -->
+        <service android:name="com.easemob.chat.EMChatService" />
+        <service
+            android:name="com.easemob.chat.EMGCMListenerService"
+            android:exported="false" />
+        <service android:name=".service.LocalIntentService" />
+
+        <!-- ********************************   receiver  ************************************ -->
+        <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.easemob.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 开机自启动服务 -->
+        <receiver android:name="com.easemob.chat.StartServiceReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- gcm start -->
+        <receiver
+            android:name="com.easemob.chat.EMGCMBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.wl.pluto.plutochat" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Service -->
+
+        <service
+            android:name=".service.MainFrameworkService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.MusicPlayService"
+            android:process=":remote" />
+
+        <!-- ************************************Activity*************************************** -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".activity.MainFrameworkActivity"
+            android:label="@string/title_activity_framework"
+            android:launchMode="singleTask"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity android:name=".activity.MobileContactsActivity" />
+        <activity
+            android:name=".activity.PeopleNearbyActivity"
+            android:label="@string/nearby_people" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="@string/title_activity_register" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.AddContactActivity" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.MyProfileActivity" />
+        <activity
+            android:name=".activity.EditNickNameActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.AdvanceEditGalleyActivity" />
+        <activity
+            android:name=".activity.ShowBigImageActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".activity.LocationActivity" />
+        <activity android:name=".activity.ShowLocationActivity" />
+        <activity android:name=".activity.ChooseVideoActivity" />
+        <activity
+            android:name=".activity.MusicPlayActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.AudioSelectedActivity" />
+        <activity android:name=".activity.GalleyActivity" />
+        <activity
+            android:name=".activity.PlayVideoMessageActivity1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.PlayVideoMessageActivity2"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.TestLoginActivity"
+            android:label="@string/title_activity_test_login" />
+        <activity android:name=".activity.MyPostsActivity" />
+        <activity android:name=".activity.NavigationActivity" />
+        <activity android:name=".activity.TestViewActivity" />
+        <activity android:name=".activity.TestAnimatorActivity" />
+
+        <service
+            android:name=".service.MessengerService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remoteMessengerService" />
+
+        <activity android:name=".activity.MessengerActivity" />
+
+        <service
+            android:name=".service.ManagerBookService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":manager_book_service" />
+
+        <activity android:name=".activity.ManagerBookActivity" />
+        <activity android:name=".activity.TestNdkActivity" />
+
+        <service
+            android:name=".service.TCPServerService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":TcpServerService" />
+
+        <activity android:name=".activity.TcpClientActivity" />
+    </application>
+
+</manifest>

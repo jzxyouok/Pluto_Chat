@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_message_voice_time_stamp"
+        style="@style/chat_message_time_stamp_text_style"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_10">
+
+        <ImageView
+            android:id="@+id/iv_message_voice_head_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/head_image_default2" />
+
+        <ImageView
+            android:id="@+id/iv_message_voice_content"
+            android:layout_width="@dimen/dimen_60"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_toEndOf="@id/iv_message_voice_head_image"
+            android:layout_toRightOf="@id/iv_message_voice_head_image"
+            android:background="@drawable/chat_message_content_rece_background"
+            android:src="@mipmap/chat_message_voice_receive_playing" />
+
+        <TextView
+            android:id="@+id/tv_message_voice_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_toEndOf="@id/iv_message_voice_content"
+            android:layout_toRightOf="@id/iv_message_voice_content" />
+    </RelativeLayout>
+
+</LinearLayout>

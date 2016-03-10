@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_background"
+    android:orientation="vertical"
+    tools:context="com.wl.pluto.plutochat.fragment.FrameworkMeFragment">
+
+
+    <LinearLayout
+        android:id="@+id/ll_person_profile"
+        style="@style/layout_public_style"
+        android:background="@drawable/public_text_background"
+        android:paddingRight="@dimen/dimen_20">
+
+        <ImageView
+            android:id="@+id/iv_me_head_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:contentDescription="@null"
+            android:src="@mipmap/head_image_default1" />
+
+        <RelativeLayout
+            android:id="@+id/rl_friends_dynamic_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_me_fragment_user_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_me_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_text_size_18" />
+
+            <TextView
+                android:id="@+id/tv_me_fragment_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_me_fragment_user_nick_name"
+                android:layout_alignStart="@id/tv_me_fragment_user_nick_name"
+                android:layout_below="@id/tv_me_fragment_user_nick_name"
+                android:layout_marginTop="@dimen/dimen_10" />
+
+            <ImageView
+                android:id="@+id/tv_discover_friends_dynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/discover_friends_dynamic_head" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_me_my_posts"
+        style="@style/text_public_style"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:drawableLeft="@mipmap/me_my_posts"
+        android:text="@string/me_my_posts" />
+
+    <TextView style="@style/view_public_style" />
+
+    <TextView
+        android:id="@+id/tv_me_favorites"
+        style="@style/text_public_style"
+        android:drawableLeft="@mipmap/me_favorites"
+        android:text="@string/favorites" />
+
+
+    <TextView
+        android:id="@+id/tv_me_wallet"
+        style="@style/text_public_style"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:drawableLeft="@mipmap/discover_drift_bottle"
+        android:text="@string/me_wallet" />
+
+
+    <TextView
+        android:id="@+id/tv_me_settings"
+        style="@style/text_public_style"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:drawableLeft="@mipmap/me_settings"
+        android:text="@string/me_settings" />
+
+
+</LinearLayout>

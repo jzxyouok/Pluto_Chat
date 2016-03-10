@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/translucent"
+    android:gravity="center_vertical"
+    android:padding="@dimen/dimen_10">
+
+    <ImageView
+        android:id="@+id/iv_media_play_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/image_media_play" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginStart="@dimen/dimen_5">
+
+        <TextView
+            android:id="@+id/tv_media_current_time"
+            style="@style/media_control_text_style"
+            android:layout_centerVertical="true"
+            android:text="00:00" />
+
+        <SeekBar
+            android:id="@+id/sb_media_control_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/tv_media_current_time"
+            android:layout_toLeftOf="@+id/tv_media_total_time"
+            android:layout_toRightOf="@id/tv_media_current_time"
+            android:layout_toStartOf="@+id/tv_media_total_time"
+            android:progressDrawable="@drawable/media_control_seek_bar_background" />
+
+        <TextView
+            android:id="@+id/tv_media_total_time"
+            style="@style/media_control_text_style"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="com.wl.pluto.plutochat.activity.ChatActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_title_bar_background"
+        android:padding="@dimen/dimen_10">
+
+        <ImageView
+            android:id="@+id/iv_chat_top_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_chat_top_bar_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/text_chat_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_text_size_18" />
+
+        <ImageView
+            android:id="@+id/iv_chat_top_bar_user_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/chat_title_bar_user_head" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_chat_bottom_bar_layout"
+        android:layout_below="@id/rl_chat_top_bar_layout">
+
+
+        <ListView
+            android:id="@+id/lv_chat_content_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="@dimen/dimen_3" />
+
+        <RelativeLayout
+            android:id="@+id/rl_chat_recording_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/chat_recording_background"
+            android:padding="@dimen/dimen_10"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:id="@+id/iv_chat_mic_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/record_animate_01" />
+
+            <TextView
+                android:id="@+id/tv_chat_mic_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_chat_mic_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="@string/text_chat_mic_hint" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_chat_bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_5">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_05"
+            android:background="@color/gray" />
+
+
+        <!-- 包括了语音按钮，EditText, 表情, 更多或者发送按钮 -->
+        <LinearLayout
+            android:id="@+id/ll_chat_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bottom_layout_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <!-- 语音 -->
+            <ImageView
+                android:id="@+id/iv_chat_set_mode_voice_or_keyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:contentDescription="@null"
+                android:src="@drawable/chat_set_mode_voice_background" />
+
+
+            <!--　切换到语音时的按住说话 -->
+            <TextView
+                android:id="@+id/tv_chat_press_to_speak"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_weight="1"
+                android:background="@drawable/press_to_speak_background"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="@dimen/dimen_10"
+                android:text="@string/text_press_to_speak"
+                android:textSize="@dimen/dimen_text_size_16"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_message_edit_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_weight="1">
+
+                <!-- q切换到键盘时的输入框 -->
+                <EditText
+                    android:id="@+id/et_message_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_40" />
+
+                <ImageView
+                    android:id="@+id/iv_message_expression_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/et_message_edit_text"
+                    android:layout_alignEnd="@id/et_message_edit_text"
+                    android:layout_alignRight="@id/et_message_edit_text"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="@dimen/dimen_15"
+                    android:layout_marginEnd="@dimen/dimen_5"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:src="@drawable/message_edit_text_background" />
+
+            </RelativeLayout>
+
+            <!-- 更多或者是发送按钮 -->
+            <RelativeLayout
+                android:layout_width="@dimen/dimen_40"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10">
+
+                <ImageView
+                    android:id="@+id/iv_chat_message_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/chat_more_background" />
+
+                <TextView
+                    android:id="@+id/tv_chat_send_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/chat_send_message_button_background"
+                    android:gravity="center"
+                    android:text="@string/btn_text_send"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- 表情区域或者更多区域 -->
+        <LinearLayout
+            android:id="@+id/ll_expression_or_more_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.wl.pluto.plutochat.widget.ViewFlipperEx
+                android:id="@+id/vf_expression_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_200"
+                android:visibility="gone">
+
+                <fragment
+                    android:id="@+id/fragment_expression_1"
+                    android:name="com.wl.pluto.plutochat.fragment.ExpressionFragment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout="@layout/fragment_expression_fragment1" />
+
+                <fragment
+                    android:id="@+id/fragment_expression_2"
+                    android:name="com.wl.pluto.plutochat.fragment.ExpressionFragment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout="@layout/fragment_expression_fragment2" />
+
+            </com.wl.pluto.plutochat.widget.ViewFlipperEx>
+
+            <GridLayout
+                android:id="@+id/gl_select_more_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_200"
+                android:layout_gravity="center_horizontal"
+                android:columnCount="4"
+                android:padding="@dimen/dimen_10"
+                android:rowCount="2"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_chat_select_capture"
+                    style="@style/chat_more_text_style"
+                    android:drawableTop="@drawable/chat_select_capture_background"
+                    android:text="@string/text_chat_select_capture" />
+
+                <TextView
+                    android:id="@+id/tv_chat_select_image"
+                    style="@style/chat_more_text_style"
+                    android:drawableTop="@drawable/chat_select_image_background"
+                    android:text="@string/text_chat_select_image" />
+
+                <TextView
+                    android:id="@+id/tv_chat_select_location"
+                    style="@style/chat_more_text_style"
+                    android:drawableTop="@drawable/chat_select_location_background"
+                    android:text="@string/text_chat_select_location" />
+
+                <TextView
+                    android:id="@+id/tv_chat_select_video"
+                    style="@style/chat_more_text_style"
+                    android:drawableTop="@drawable/chat_select_video_background"
+                    android:text="@string/text_chat_select_video" />
+
+                <TextView
+                    android:id="@+id/tv_chat_select_file"
+                    style="@style/chat_more_text_style"
+                    android:drawableTop="@drawable/chat_select_file_background"
+                    android:text="@string/text_chat_select_file" />
+
+                <TextView
+                    android:id="@+id/tv_chat_select_voice_call"
+                    style="@style/chat_more_text_style"
+                    android:drawableTop="@drawable/chat_select_voice_call_background"
+                    android:text="@string/text_chat_select_voice_call" />
+
+                <TextView
+                    android:id="@+id/tv_chat_select_video_call"
+                    style="@style/chat_more_text_style"
+                    android:drawableTop="@drawable/chat_select_video_call_background"
+                    android:text="@string/text_chat_select_video_call" />
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

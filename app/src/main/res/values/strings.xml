@@ -1,0 +1,215 @@
+<resources>
+    <string name="app_name">PlutoChat</string>
+    <string name="btn_main_login">Login</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_framework">Chat</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login in</string>
+    <string name="action_register">Register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="menu_action_search">Search</string>
+    <string name="menu_action_setting">Setting</string>
+    <string name="fragment_0">fragment_0</string>
+    <string name="fragment_1">fragment_1</string>
+    <string name="fragment_2">Moments</string>
+    <string name="fragment_3">fragment_3</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_main_chat">Chat</string>
+    <string name="text_main_contacts">Contacts</string>
+    <string name="text_main_discover">Discover</string>
+    <string name="text_main_me">Me</string>
+
+    <!-- Chat -->
+    <string name="text_chat_message">welcome to come back!</string>
+    <string name="text_chat_time">10:24</string>
+    <string name="discover_scan_QR_code">Scan QR Code</string>
+    <string name="discover_shake">Shake</string>
+    <string name="discover_people_nearby">People Nearby</string>
+    <string name="discover_drift_bottle">Drift bottle</string>
+    <string name="discover_games">Games</string>
+    <string name="text_me_name">pluto</string>
+    <string name="text_me_chat_id">ID: 123456789</string>
+    <string name="me_my_posts">My posts</string>
+    <string name="favorites">Favorites</string>
+    <string name="me_wallet">Wallet</string>
+    <string name="me_settings">Settings</string>
+    <string name="text_first_letter">A</string>
+    <string name="deviceName">jeck</string>
+    <string name="btn_message_send">Send</string>
+    <string name="nearby_people">Nearby People</string>
+    <string name="title_activity_register">Register</string>
+    <string name="prompt_username">eg: jeck</string>
+    <string name="register_nickName">NickName:</string>
+    <string name="register_password">Password:</string>
+    <string name="register_phone_number">+86:</string>
+    <string name="prompt_phone_number">eg:136001</string>
+    <string name="xmpp_server_host">192.168.1.0</string>
+    <string name="xmpp_server_port">5222</string>
+    <string name="xmpp_server_domain_name">jeck</string>
+    <!-- network setting -->
+    <string name="wifi_connection">Wi-Fi is connection</string>
+    <string name="lose_connection">network is not connection</string>
+    <string name="connection_error">Unable to load content. Check your network connection</string>
+    <string name="page_title">Newest StackOverflow questions tagged \'android\'</string>
+    <string name="updated">Last updated:</string>
+    <string name="action_refresh">refresh</string>
+    <string name="title_activity_network_settings">Settings</string>
+    <string name="text_cb_is_remember_password">RememberPWD</string>
+    <string name="menu_add_people">AddPoploe</string>
+    <string name="btn_search_button">Search</string>
+    <string name="prompt_input_chaid">Please input username</string>
+
+    <!-- Exception and Error-->
+    <string name="exception_network_not_available">当前网络不可用</string>
+    <string name="exception_network_connection">网络异常，请检查网络！</string>
+    <string name="exception_user_exists">用户已存在！</string>
+    <string name="exception_register_failed">注册失败</string>
+    <string name="exception_register_failed_no_permission">注册失败，无权限！</string>
+    <string name="success_login_success">登陆聊天服务器成功！</string>
+    <string name="error_login_failed">登陆聊天服务器失败！</string>
+
+    <!-- profile-->
+    <string name="profile_set_remark_and_tag">Set Remark and Tag</string>
+    <string name="profile_region">Region</string>
+    <string name="profile_chongqing_china">中国　重庆</string>
+    <string name="profile_album">Album</string>
+    <string name="profile_more">More</string>
+    <string name="btn_text_send_message">Message</string>
+    <string name="text_my_profile_photo">Profile Photo</string>
+    <string name="text_my_profile_nick_name">Nick Name</string>
+    <string name="text_my_profile_chat_id">Chat ID</string>
+    <string name="text_my_profile_qr_code">My QR Code</string>
+    <string name="text_my_profile_gerder">Gender</string>
+    <string name="text_my_profile_region">Region</string>
+    <string name="text_my_profile_signature">Signature</string>
+    <string name="text_edit_nick_name">Edit Nick Name</string>
+    <string name="btn_edit_save_button">Save</string>
+
+    <!-- progress dialog text-->
+    <string name="text_dialog_update_nick">update nickname</string>
+    <string name="text_dialog_waiting">waiting</string>
+    <string name="application_and_notification">Invitation And Notification</string>
+    <string name="info_username_exist">The Username exist, Please login</string>
+    <string name="error_people_no_find">No people</string>
+    <string name="btn_text_add_people">Add</string>
+    <string name="error_text_add_youself">Can not add youself</string>
+    <string name="text_notify_contact_exist">The Contact is already exist</string>
+    <string name="text_notify_sedding_request">Sendding Request</string>
+    <string name="text_add_reason">I what to make friend with you</string>
+    <string name="success_add_people_success">Add Contact Success</string>
+    <string name="error_add_people_failed">Add Contact Failed</string>
+    <string name="text_chat_title">pluto</string>
+    <string name="text_chat_mic_hint">Finger up to cancel sending</string>
+    <string name="text_contact_head_recommend_friend">Recommends Friends</string>
+    <string name="text_contact_head_group_chat">Group Chats</string>
+    <string name="text_contact_head_tag">Tags</string>
+    <string name="text_contact_head_official_accounts">Official Accounts</string>
+    <string name="text_press_to_speak">Press to speak</string>
+    <string name="text_chat_select_capture">Capture</string>
+    <string name="text_chat_select_image">Image</string>
+    <string name="text_chat_select_location">Location</string>
+    <string name="text_chat_select_video">Video</string>
+    <string name="text_chat_select_file">File</string>
+    <string name="text_chat_select_voice_call">VoiceCall</string>
+    <string name="text_chat_select_video_call">VideoCall</string>
+    <string name="btn_text_send">Send</string>
+    <string name="text_exit_app">click back to exit !</string>
+    <string name="text_input_nick_name">Please input nick name</string>
+    <string name="text_dialog_ok">OK</string>
+    <string name="text_dialog_cancel">Cancel</string>
+    <string name="text_database_update_success">Database Update Success</string>
+    <string name="text_input_is_null">Input is Null</string>
+    <string name="text_dialog_notification">Notification</string>
+    <string name="fragment1">expression fragment 1</string>
+    <string name="fragment2">expression fragment 2</string>
+    <string name="text_advance_edit_clean">清屏</string>
+    <string name="text_advance_edit_save">保存</string>
+    <string name="text_advance_edit_previous">上一步</string>
+    <string name="text_advance_edit_next">下一步</string>
+    <string name="text_advance_edit_eraser">橡皮擦</string>
+    <string name="text_advance_edit_color">颜色</string>
+    <string name="setting_logout">Logout</string>
+    <string name="btn_main_register">Register</string>
+    <string name="error_text_file_not_found">File not found</string>
+    <string name="digest_message_picture">[Picture]</string>
+    <string name="digest_message_location">[Location]</string>
+
+
+    <!---->
+    <string name="location_contiue">持续定位</string>
+    <string name="location_once">单次定位</string>
+    <string name="interval">定位周期</string>
+    <string name="millsecond">毫秒</string>
+    <string name="needAddress">逆地理编码</string>
+    <string name="gpsFirst">GPS优先</string>
+    <string name="startLocation">开始定位</string>
+    <string name="stopLocation">停止定位</string>
+    <string name="menu_location_send">Send</string>
+    <string name="text_screen_shot_success">Screen Capture Success</string>
+    <string name="text_screen_shot_failed">Screen Capture Failed</string>
+    <string name="menu_location_map_capture">Capture</string>
+    <string name="delete_conversation">Delete Conversation</string>
+    <string name="delete_conversation_messages">Delete Conversation And Message</string>
+    <string name="text_menu_contacts_set_remark_tag">Set Remark And Tag</string>
+    <string name="text_menu_chat_activity_copy">Copy</string>
+    <string name="text_menu_chat_activity_forward">Forward</string>
+    <string name="text_menu_chat_activity_favorite">Favorite</string>
+    <string name="text_menu_chat_activity_translate">Translate</string>
+    <string name="text_menu_chat_activity_delete">Delete</string>
+    <string name="text_menu_chat_activity_more">More...</string>
+    <string name="text_notify_sdcard_is_not_avalible">SDCard is not avalible</string>
+    <string name="text_error_recording_failed">Recording Failed</string>
+    <string name="digest_message_voice">[Voice]</string>
+    <string name="digest_message_file">[File]</string>
+    <string name="digest_message_video">[video]</string>
+    <string name="music_name">Music Name</string>
+    <string name="music_title">Music Title</string>
+    <string name="music_artist">Music Artist</string>
+    <string name="load_music_list">Load Music List</string>
+    <string name="music_play">play</string>
+    <string name="music_pause">pause</string>
+    <string name="music_before">before</string>
+    <string name="music_next">next</string>
+    <string name="music_random">random</string>
+    <string name="load_http_resoutces">load net resource</string>
+    <string name="load_video_for_video_gallery">Load Video</string>
+    <string name="text_notify_support_video_size">暂不支持大于10M的视频</string>
+    <string name="text_notify_start_camera">拍摄录像</string>
+    <string name="play_or_pause_video">Play</string>
+    <string name="start_video_play_program">start video play program</string>
+    <string name="pause_or_play_vidoe">Play or Pause</string>
+    <string name="login_username">Username</string>
+    <string name="title_activity_test_login">test</string>
+    <string name="text_btn_download">Download</string>
+
+
+    <!-- CompassView-->
+    <string name="compass_east">E</string>
+    <string name="compass_south">S</string>
+    <string name="compass_west">W</string>
+    <string name="compass_north">N</string>
+    <string name="StartService">Start Service</string>
+    <string name="StopService">Stop Service</string>
+    <string name="BindService">Bind Service</string>
+    <string name="unbind_service">Unbind Service</string>
+    <string name="text_btn_test_animator">Test</string>
+    <string name="text_start_messenger_service">Start Messenger Service</string>
+    <string name="text_manager_get_book">Get BookS</string>
+    <string name="text_manager_add_book">Add Book</string>
+    <string name="text_manager_register">Register</string>
+    <string name="text_btn_test_thread">Thread</string>
+
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ams">
+
+
+    <LinearLayout
+        android:id="@+id/ll_main_login_or_register_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <Button
+            android:id="@+id/btn_main_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_50"
+            android:layout_marginRight="@dimen/dimen_50"
+            android:background="@drawable/common_button_background"
+            android:text="@string/btn_main_login" />
+
+        <Button
+            android:id="@+id/btn_main_Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_50"
+            android:layout_marginStart="@dimen/dimen_50"
+            android:background="@drawable/common_button_background"
+            android:text="@string/btn_main_register" />
+    </LinearLayout>
+
+</RelativeLayout>

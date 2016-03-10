@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_message_text_send"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_message_txt_time_stamp"
+        style="@style/chat_message_time_stamp_text_style"
+        android:visibility="invisible" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/dimen_10">
+
+        <ImageView
+            android:id="@+id/iv_message_txt_head_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/head_image_default2" />
+
+        <TextView
+            android:id="@+id/tv_message_txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_toLeftOf="@+id/iv_message_txt_head_image"
+            android:autoLink="web"
+            android:background="@drawable/chat_message_content_send_background"
+            android:clickable="true"
+            android:gravity="center|left"
+            android:lineSpacingExtra="@dimen/dimen_2"
+            android:maxWidth="@dimen/dimen_200"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_text_size_14" />
+
+        <ImageView
+            android:id="@+id/iv_message_txt_send_statue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_toLeftOf="@+id/tv_message_txt_content"
+            android:src="@mipmap/message_send_failed_statue"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pb_message_txt_send_progress"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_toLeftOf="@+id/tv_message_txt_content" />
+    </RelativeLayout>
+
+</LinearLayout>

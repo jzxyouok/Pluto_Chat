@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/public_text_background"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_10">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50">
+
+
+        <ImageView
+            android:id="@+id/iv_chat_fragment_head_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:src="@mipmap/head_image_default2" />
+
+        <TextView
+            android:id="@+id/tv_chat_notification_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/small_red_point_with_num"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_text_size_9"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_chat_fragment_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:textColor="@color/chat_title_color"
+            android:textSize="@dimen/dimen_text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_chat_fragment_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_chat_fragment_nick_name"
+            android:layout_alignStart="@id/tv_chat_fragment_nick_name"
+            android:layout_below="@id/tv_chat_fragment_nick_name"
+            android:ellipsize="end"
+            android:maxEms="11"
+            android:singleLine="true"
+            android:textSize="@dimen/dimen_text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_chat_fragment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dimen_10" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- 长按聊天链表的对话框数据源 -->
+    <string-array name="dialog_chat_data">
+        <item>Mark as Unread</item>
+        <item>Sticky on top</item>
+        <item>Delete conversation</item>
+    </string-array>
+
+    <!-- 长按联系人链表的对话框数据源 -->
+    <string-array name="dialog_contacts_data">
+        <item>Set Remarks and Tags</item>
+    </string-array>
+
+    <!-- 长按聊天内容的对话框数据源 -->
+    <string-array name="dialog_conversation_data">
+        <item>Copy</item>
+        <item>Forward</item>
+        <item>Favorite</item>
+        <item>Translate</item>
+        <item>Delete</item>
+        <item>More...</item>
+    </string-array>
+</resources>

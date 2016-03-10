@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_message_text_receive"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_message_txt_time_stamp"
+        style="@style/chat_message_time_stamp_text_style"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_10">
+
+        <ImageView
+            android:id="@+id/iv_message_txt_head_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/head_image_default2" />
+
+        <TextView
+            android:id="@+id/tv_message_txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_toRightOf="@id/iv_message_txt_head_image"
+            android:autoLink="web"
+            android:background="@drawable/chat_message_content_rece_background"
+            android:clickable="true"
+            android:gravity="center|left"
+            android:lineSpacingExtra="@dimen/dimen_2"
+            android:maxWidth="@dimen/dimen_200"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_text_size_14" />
+    </RelativeLayout>
+</LinearLayout>

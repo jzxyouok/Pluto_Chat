@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_message_location_time_stamp"
+        style="@style/chat_message_time_stamp_text_style"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_10">
+
+        <ImageView
+            android:id="@+id/iv_message_location_head_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/head_image_default2" />
+
+        <RelativeLayout
+            android:id="@+id/rl_message_location_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_toEndOf="@id/iv_message_location_head_image"
+            android:layout_toRightOf="@id/iv_message_location_head_image"
+            android:background="@drawable/chat_message_receive_background"
+            android:clickable="true"
+            android:gravity="center|left">
+
+
+            <TextView
+                android:id="@+id/tv_message_location_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/location_image"
+                android:ellipsize="end"
+                android:maxEms="15"
+                android:singleLine="true" />
+
+
+            <ProgressBar
+                android:id="@+id/pb_message_location_progress_bar"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_message_location_progress_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="aaa"
+                android:textSize="@dimen/dimen_text_size_9"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_message_location_statue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_toEndOf="@id/rl_message_location_layout"
+            android:layout_toRightOf="@id/rl_message_location_layout"
+            android:src="@mipmap/message_send_failed_statue"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

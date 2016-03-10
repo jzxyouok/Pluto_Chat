@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wl.pluto.plutochat.activity.MainFrameworkActivity">
+
+    <com.wl.pluto.plutochat.widget.ViewFlipperEx
+        android:id="@+id/vf_main_view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/include_bottom_layout">
+
+        <fragment
+            android:id="@+id/fragment_chat"
+            android:name="com.wl.pluto.plutochat.fragment.FrameworkChatFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_framework_chat" />
+
+        <fragment
+            android:id="@+id/fragment_contacts"
+            android:name="com.wl.pluto.plutochat.fragment.FrameworkContactsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_framework_contacts" />
+
+        <fragment
+            android:id="@+id/fragment_discover"
+            android:name="com.wl.pluto.plutochat.fragment.FrameworkDiscoverFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_framework_discover" />
+
+        <fragment
+            android:id="@+id/fragment_me"
+            android:name="com.wl.pluto.plutochat.fragment.FrameworkMeFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_framework_me" />
+
+    </com.wl.pluto.plutochat.widget.ViewFlipperEx>
+
+    <include
+        android:id="@+id/include_bottom_layout"
+        layout="@layout/layout_main_framework_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

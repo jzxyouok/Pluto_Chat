@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_background"
+    android:orientation="vertical"
+    tools:context="com.wl.pluto.plutochat.fragment.FrameworkDiscoverFragment">
+
+    <!-- Moments -->
+
+    <RelativeLayout style="@style/layout_public_style">
+
+        <TextView
+            android:id="@+id/tv_discover_moments"
+            style="@style/text_public_style"
+            android:drawableLeft="@mipmap/discover_moments"
+            android:text="@string/fragment_2" />
+
+        <RelativeLayout
+            android:id="@+id/rl_friends_dynamic_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/tv_discover_friends_dynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/discover_friends_dynamic_head" />
+
+            <ImageView
+                android:id="@+id/iv_discover_friends_dynamic_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/discover_friends_dynamic_flag" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_scan_shake"
+        style="@style/layout_public_style"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_discover_scan_QR_code"
+            style="@style/text_public_style"
+            android:drawableLeft="@mipmap/discover_scan_qr_code"
+            android:text="@string/discover_scan_QR_code" />
+
+        <TextView style="@style/view_public_style" />
+
+        <TextView
+            android:id="@+id/tv_discover_shake"
+            style="@style/text_public_style"
+            android:drawableLeft="@mipmap/discover_shake"
+            android:text="@string/discover_shake" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_nearby_bottle"
+        style="@style/layout_public_style"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_discover_people_nearby"
+            style="@style/text_public_style"
+            android:drawableLeft="@mipmap/discover_people_nearby"
+            android:text="@string/discover_people_nearby" />
+
+        <TextView style="@style/view_public_style" />
+
+        <TextView
+            android:id="@+id/tv_discover_drift_bottle"
+            style="@style/text_public_style"
+            android:drawableLeft="@mipmap/discover_drift_bottle"
+            android:text="@string/discover_drift_bottle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_games"
+        style="@style/layout_public_style"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_discover_games"
+            style="@style/text_public_style"
+            android:drawableLeft="@mipmap/discover_games"
+            android:text="@string/discover_games" />
+    </LinearLayout>
+
+
+</LinearLayout>

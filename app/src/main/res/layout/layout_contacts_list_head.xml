@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_contact_head_layout"
+    style="@style/layout_public_style"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_contact_head_recommend_friend"
+        style="@style/text_public_style"
+        android:drawableLeft="@mipmap/me_favorites"
+        android:text="@string/text_contact_head_recommend_friend" />
+
+    <TextView style="@style/view_public_style" />
+
+    <TextView
+        android:id="@+id/tv_contact_head_group_chat"
+        style="@style/text_public_style"
+        android:drawableLeft="@mipmap/group_chat"
+        android:text="@string/text_contact_head_group_chat" />
+
+    <TextView style="@style/view_public_style" />
+
+    <TextView
+        android:id="@+id/tv_contacts_head_tag"
+        style="@style/text_public_style"
+        android:drawableLeft="@mipmap/tags"
+        android:text="@string/text_contact_head_tag" />
+
+    <TextView style="@style/view_public_style" />
+
+    <TextView
+        android:id="@+id/tv_contact_head_official_accounts"
+        style="@style/text_public_style"
+        android:drawableLeft="@mipmap/official_account"
+        android:text="@string/text_contact_head_official_accounts" />
+</LinearLayout>
+

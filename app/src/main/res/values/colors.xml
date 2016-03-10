@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="main_bottom_bar_text_color_default">#969696</color>
+    <color name="main_bottom_bar_text_color_selected">#00b8ee</color>
+    <color name="chat_fragment_background">#aaaaaa</color>
+    <color name="contacts_fragment_background">#aabbcc</color>
+    <color name="fragment_background">#dddddd</color>
+    <color name="me_fragment_background">#adde23</color>
+
+    <!--Chat-->
+    <color name="chat_title_color">#545454</color>
+    <color name="common_green">#059754</color>
+
+    <!-- Discover -->
+    <color name="layout_background">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="first_letter_background">#e0e0e0</color>
+    <color name="first_letter_text_color">#454545</color>
+    <color name="side_bar_title_text_color">#336598</color>
+    <color name="letter_dialog_backgrond">#eeaabb</color>
+    <color name="white">#ffffff</color>
+    <color name="gold">#545454</color>
+    <color name="green">#00ff00</color>
+    <color name="chat_title_bar_background">#333333</color>
+    <color name="gray">#666666</color>
+    <color name="light_gray">#bdbdbd</color>
+    <color name="bottom_layout_background">#aaffffff</color>
+    <color name="view_background">#888888</color>
+    <color name="transition">#88888888</color>
+    <color name="chat_recording_background">#88888888</color>
+    <color name="video_duration_background">#88000000</color>
+    <color name="translucent">#88000000</color>
+    <color name="seek_bar_progress_back">#c6c6c6</color>
+    <color name="seek_bar_progress_thumbnail">#06a7fa</color>
+
+    <!--CompassView-->
+    <color name="background_color">#F555</color>
+    <color name="marker_color">#AFFF</color>
+    <color name="text_color">#AF00</color>
+
+    <!-- PieChart-->
+    <color name="seafoam">#ffc6f9e5</color>
+    <color name="chartreuse">#ffb6e9b5</color>
+    <color name="emerald">#ffa6d9b5</color>
+    <color name="bluegrass">#ff96c9b5</color>
+    <color name="turquoise">#ff86b9b5</color>
+    <color name="slate">#ff76a9b5</color>
+</resources>

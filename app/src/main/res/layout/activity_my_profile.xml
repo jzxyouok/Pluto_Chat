@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_background"
+    android:orientation="vertical"
+    tools:context="com.wl.pluto.plutochat.activity.MyProfileActivity">
+
+    <LinearLayout
+        style="@style/layout_public_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_my_profile_photo"
+            style="@style/my_profile_layout_style">
+
+            <TextView
+                style="@style/text_color_black_public_style"
+                android:text="@string/text_my_profile_photo" />
+
+            <ImageView
+                android:id="@+id/iv_my_profile_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/dimen_10"
+                android:contentDescription="@null"
+                android:src="@mipmap/head_image_default1" />
+
+        </RelativeLayout>
+
+        <TextView style="@style/view_public_style" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_my_profile_nick_name"
+            style="@style/my_profile_layout_style">
+
+            <TextView
+                style="@style/text_color_black_public_style"
+                android:text="@string/text_my_profile_nick_name" />
+
+            <TextView
+                android:id="@+id/tv_my_profile_nick_name"
+                style="@style/my_profile_text_style"
+                android:text="@string/action_refresh" />
+
+        </RelativeLayout>
+
+        <TextView style="@style/view_public_style" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_my_profile_chat_id"
+            style="@style/my_profile_layout_style">
+
+            <TextView
+                style="@style/text_color_black_public_style"
+                android:text="@string/text_my_profile_chat_id" />
+
+            <TextView
+                android:id="@+id/tv_my_profile_chat_id"
+                style="@style/my_profile_text_style"
+                android:text="@string/action_refresh" />
+
+        </RelativeLayout>
+
+        <TextView style="@style/view_public_style" />
+
+        <RelativeLayout
+            android:id="@+id/rl_my_profile_qr_code"
+            style="@style/my_profile_layout_style">
+
+            <TextView
+                style="@style/text_color_black_public_style"
+                android:text="@string/text_my_profile_qr_code" />
+
+            <TextView
+                android:id="@+id/tv_my_profile_qr_code"
+                style="@style/my_profile_text_style"
+                android:text="@string/action_refresh" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_public_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_my_profile_gender"
+            style="@style/my_profile_layout_style">
+
+            <TextView
+                style="@style/text_color_black_public_style"
+                android:text="@string/text_my_profile_gerder" />
+
+            <TextView
+                android:id="@+id/tv_my_profile_gender"
+                style="@style/my_profile_text_style"
+                android:text="@string/action_refresh" />
+
+        </RelativeLayout>
+
+        <TextView style="@style/view_public_style" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_my_profile_Region"
+            style="@style/my_profile_layout_style">
+
+            <TextView
+                style="@style/text_color_black_public_style"
+                android:text="@string/text_my_profile_region" />
+
+            <TextView
+                android:id="@+id/tv_my_profile_region"
+                style="@style/my_profile_text_style"
+                android:text="@string/action_refresh" />
+
+        </RelativeLayout>
+
+
+        <TextView style="@style/view_public_style" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_my_profile_signature"
+            style="@style/my_profile_layout_style">
+
+            <TextView
+                style="@style/text_color_black_public_style"
+                android:text="@string/text_my_profile_signature" />
+
+            <TextView
+                android:id="@+id/tv_my_profile_signature"
+                style="@style/my_profile_text_style"
+                android:text="@string/action_refresh" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

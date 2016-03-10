@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_message_voice_time_stamp"
+        style="@style/chat_message_time_stamp_text_style"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/dimen_10">
+
+        <ImageView
+            android:id="@+id/iv_message_voice_head_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/head_image_default2" />
+
+        <ImageView
+            android:id="@+id/iv_message_voice_content"
+            android:layout_width="@dimen/dimen_60"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_5"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_toStartOf="@id/iv_message_voice_head_image"
+            android:layout_toLeftOf="@id/iv_message_voice_head_image"
+            android:src="@mipmap/chat_message_voice_send_playing"
+            android:background="@drawable/chat_message_content_send_background" />
+
+        <TextView
+            android:id="@+id/tv_message_voice_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_toLeftOf="@id/iv_message_voice_content" />
+
+
+        <ImageView
+            android:id="@+id/iv_message_voice_send_statue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_toLeftOf="@id/tv_message_voice_length"
+            android:src="@mipmap/message_send_failed_statue"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pb_message_voice_send_progress"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_toLeftOf="@id/tv_message_voice_length" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

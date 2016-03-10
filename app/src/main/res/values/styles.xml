@@ -1,0 +1,146 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 主界面底部布局的text style -->
+    <style name="textStyle">
+        <item name="android:textColor">@color/main_bottom_bar_text_color_default</item>
+        <item name="android:drawablePadding">@dimen/dimen_18n</item>
+    </style>
+
+
+    <!-- 通用的布局样式，点击的时候背景不会变色 -->
+    <style name="layout_public_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">@dimen/dimen_20</item>
+    </style>
+
+    <!-- 通用的布局样式，点击的时候背景会变成浅灰色 -->
+    <style name="layout_public_background_change_style">
+        <item name="android:padding">@dimen/dimen_10</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/public_text_background</item>
+    </style>
+
+    <!-- 通用的TextView 样式，点击的时候背景会变成浅灰色 -->
+    <style name="text_public_style">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/dimen_10</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/public_text_background</item>
+        <item name="android:padding">@dimen/dimen_10</item>
+        <item name="android:textSize">@dimen/dimen_text_size_16</item>
+    </style>
+
+    <!-- 通用的TextView 样式，字体颜色为黑色-->
+    <style name="text_color_black_public_style">
+        <item name="android:padding">@dimen/dimen_10</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/dimen_text_size_16</item>
+    </style>
+
+    <!-- 通用的分割线样式 -->
+    <style name="view_public_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_05</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_10</item>
+        <item name="android:layout_marginRight">@dimen/dimen_10</item>
+        <item name="android:background">@color/view_background</item>
+    </style>
+
+    <!-- my profile 界面的　右侧TextView 的样式 -->
+    <style name="my_profile_text_style">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dimen_10</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textSize">@dimen/dimen_text_size_14</item>
+    </style>
+
+    <!-- my profile 界面的　每一个layout 的样式 -->
+    <style name="my_profile_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dimen_5</item>
+        <item name="android:paddingBottom">@dimen/dimen_5</item>
+        <item name="android:background">@drawable/public_text_background</item>
+    </style>
+
+    <!-- 聊天界面中点击更多按钮时，出现的选择发送语音，图片，视频等的Text style -->
+    <style name="chat_more_text_style">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dimen_10</item>
+        <item name="android:drawablePadding">@dimen/dimen_2</item>
+        <item name="android:textSize">@dimen/dimen_text_size_16</item>
+    </style>
+
+    <style name="chat_message_time_stamp_text_style">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dimen_5</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_5</item>
+        <item name="android:background">@drawable/chat_message_time_stamp_background</item>
+        <item name="android:textSize">@dimen/dimen_text_size_12</item>
+    </style>
+
+    <style name="operation_dialog_style" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="video_list_grid_view_style" parent="android:Widget.GridView">
+        <item name="android:columnWidth">75dp</item>
+        <item name="android:alwaysDrawnWithCache">true</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:horizontalSpacing">5dp</item>
+        <item name="android:listSelector">@null</item>
+        <item name="android:numColumns">auto_fit</item>
+        <item name="android:paddingLeft">@dimen/video_list_grid_item_space_size</item>
+        <item name="android:paddingRight">@dimen/video_list_grid_item_space_size</item>
+        <item name="android:paddingBottom">@dimen/video_list_grid_item_space_size</item>
+        <item name="android:verticalSpacing">@dimen/video_list_grid_item_space_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="grid_view_item_duration" parent="android:Widget.TextView">
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:paddingRight">@dimen/dimen_3</item>
+        <item name="android:paddingLeft">@dimen/dimen_3</item>
+    </style>
+
+    <style name="media_control_text_style" parent="android:Widget.TextView">
+        <item name="android:layout_width">@dimen/dimen_40</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/dimen_text_size_11</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>
