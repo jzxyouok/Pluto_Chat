@@ -3,9 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fragment_background"
-    tools:context="com.wl.pluto.plutochat.fragment.FrameworkContactsFragment">
+    tools:context=".chat.fragment.FrameworkContactsFragment">
 
-    <com.wl.pluto.plutochat.widget.GestureListView
+    <com.wl.pluto.plutochat.chat.widget.GestureListView
         android:id="@+id/lv_fragment_contacts_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -20,7 +20,7 @@
         android:textSize="@dimen/dimen_text_size_24"
         android:visibility="invisible" />
 
-    <com.wl.pluto.plutochat.widget.SideBar
+    <com.wl.pluto.plutochat.chat.widget.SideBar
         android:id="@+id/sb_side_bar"
         android:layout_width="@dimen/dimen_20"
         android:layout_height="match_parent"

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
-    tools:context="com.wl.pluto.plutochat.activity.ChatActivity">
+    tools:context=".chat.activity.ChatActivity">
 
     <RelativeLayout
         android:id="@+id/rl_chat_top_bar_layout"
@@ -195,7 +195,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.wl.pluto.plutochat.widget.ViewFlipperEx
+            <com.wl.pluto.plutochat.chat.widget.ViewFlipperEx
                 android:id="@+id/vf_expression_layout"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_200"
@@ -203,19 +203,19 @@
 
                 <fragment
                     android:id="@+id/fragment_expression_1"
-                    android:name="com.wl.pluto.plutochat.fragment.ExpressionFragment1"
+                    android:name="com.wl.pluto.plutochat.chat.fragment.ExpressionFragment1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     tools:layout="@layout/fragment_expression_fragment1" />
 
                 <fragment
                     android:id="@+id/fragment_expression_2"
-                    android:name="com.wl.pluto.plutochat.fragment.ExpressionFragment2"
+                    android:name="com.wl.pluto.plutochat.chat.fragment.ExpressionFragment2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     tools:layout="@layout/fragment_expression_fragment2" />
 
-            </com.wl.pluto.plutochat.widget.ViewFlipperEx>
+            </com.wl.pluto.plutochat.chat.widget.ViewFlipperEx>
 
             <GridLayout
                 android:id="@+id/gl_select_more_layout"

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".base.BaseEditDialog">
+    tools:context=".chat.base.BaseEditDialog">
 
     <EditText
         android:id="@+id/et_framework_dialog_edit"

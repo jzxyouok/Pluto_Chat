@@ -5,9 +5,9 @@
     android:layout_height="wrap_content"
     android:background="@color/black"
     android:orientation="vertical"
-    tools:context="com.wl.pluto.plutochat.activity.TestViewActivity">
+    tools:context=".chat.activity.TestViewActivity">
 
-    <com.wl.pluto.plutochat.widget.TestCircleView
+    <com.wl.pluto.plutochat.chat.widget.TestCircleView
         android:id="@+id/cv_circle_view1"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_100"
@@ -19,7 +19,7 @@
         android:layout_height="@dimen/dimen_10"
         android:background="@color/white" />
 
-    <com.wl.pluto.plutochat.widget.TestCircleView
+    <com.wl.pluto.plutochat.chat.widget.TestCircleView
         android:id="@+id/cv_circle_view2"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/dimen_100"

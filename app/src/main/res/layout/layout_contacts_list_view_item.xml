@@ -34,7 +34,7 @@
             android:src="@mipmap/head_image_default2" />
 
 
-        <com.wl.pluto.plutochat.widget.ExpTextView
+        <com.wl.pluto.plutochat.chat.widget.ExpTextView
             android:id="@+id/tv_contacts_user_nick_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

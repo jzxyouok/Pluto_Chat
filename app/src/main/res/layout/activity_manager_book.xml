@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.wl.pluto.plutochat.activity.ManagerBookActivity">
+    tools:context=".chat.activity.ManagerBookActivity">
 
     <Button
         android:id="@+id/btn_manager_get_book"

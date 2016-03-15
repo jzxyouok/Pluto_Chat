@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.PlayVideoMessageActivity1">
+    tools:context=".chat.activity.PlayVideoMessageActivity1">
 
     <VideoView
         android:id="@+id/vv_video_play_window"
